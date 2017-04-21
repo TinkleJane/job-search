@@ -1,7 +1,3 @@
 <h1>Edit a job</h1>
 
-<%= simple_form_for @job do |f| %>
-  <%= f.input :title %>
-  <%= f.input :description %>
-  <%= f.submit "Submit" %>
-<% end %>
+<%= render "common/post" %>
