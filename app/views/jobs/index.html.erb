@@ -2,16 +2,19 @@
   <%= link_to("Add a job", new_job_path, :class => "btn btn-default") %>
 </div>
 
-<table class="table table-bordered">
+<table class="table table-boldered">
+  <tr>
+    <th>职缺</th>
+    <th><%= link_to("薪资下限", jobs_path(:order => "by_lower_bound"))%></th>
+    <th><%= link_to("薪资上限", jobs_path(:order => "by_upper_bound"))%></th>
+    <th><%= link_to("刊登日期", jobs_path)%></th>
+  </tr>
   <% @jobs.each do |job| %>
     <tr>
       <td><%= link_to(job.title, job_path(job))%></td>
+      <td><%= job.wage_lower_bound %></td>
+      <td><%= job.wage_upper_bound %></td>
       <td><%= job.created_at %></td>
-      <td>
-        <%= link_to("Edit", edit_job_path(job)) %>
-        <%= link_to("Destroy", job_path(job), :method => :delete, :data => { :confirm => "Are you sure?"}) %>
-      </td>
-      <td> <%= job.created_at %></td>
     </tr>
   <% end %>
 </table>
