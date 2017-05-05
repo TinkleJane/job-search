@@ -16,3 +16,22 @@
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
+ .block-nowidth-father-center{
+   position: relative;
+   left: 50%;
+ }
+
+.block-nowidth-child-center{
+  position: relative;
+  left: -50%;
+}
+
+.block-fixwidth-center{
+  width: 1000px;
+  margin: 20px auto;
+}
+
+.m20{
+  margin: 20px;
+}

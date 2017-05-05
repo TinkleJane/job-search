@@ -1,0 +1,67 @@
+// Place all the styles related to the courses controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.offering-content {
+    background-color: #fff;
+    border: 1px solid #dcdcdc;
+    margin-bottom: 10px;
+    min-height: 120px;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden
+}
+
+.horizontal-box,.pagination-controls-container,.pagination-controls-container .box,.search-bar,.search-bar .input-area,h1.tab-headline,h1.tab-headline-small,h2.tab-headline,h2.tab-headline-small,h3.tab-headline,h3.tab-headline-small,h4.tab-headline,h4.tab-headline-small,h5.tab-headline,h5.tab-headline-small,h6.tab-headline,h6.tab-headline-small {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -o-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row
+}
+
+.offering-info h2 {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 12px 0 8px
+}
+
+.flex-1,.search-bar .input-area {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -o-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.offering-info {
+    margin: 0 30px
+}
+
+.color-primary-text {
+    color: rgba(0,0,0,.87)
+}
+
+.c-search-catalog-input,.headline-1-text,.headline-3-text,.headline-4-text,h1.tab-headline,h1.tab-headline-small,h2.tab-headline,h2.tab-headline-small,h3.tab-headline,h3.tab-headline-small,h4.tab-headline,h4.tab-headline-small,h5.tab-headline,h5.tab-headline-small,h6.tab-headline,h6.tab-headline-small {
+    font-family: OpenSans,Arial,sans-serif
+}
+
+.courseraLogoImage_wme5kp {
+    width: 127px;
+    height: 32px;
+}
+
+img {
+    border-style: none;
+    vertical-align: middle;
+}
