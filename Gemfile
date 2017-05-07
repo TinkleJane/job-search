@@ -1,3 +1,4 @@
+
 # source 'https://rubygems.org'
 source 'https://gems.ruby-china.org'
 
@@ -35,7 +36,8 @@ gem 'devise'
 gem 'carrierwave'
 gem 'rest-client'
 gem 'ransack'
-gem 'will_paginate'
+gem 'will_paginate-bootstrap'
+gem "font-awesome-rails"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -52,7 +54,7 @@ group :development do
   # gem 'spring'
   # gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'bullet'
-  gem 'rack-mini-profiler'
+  # gem 'rack-mini-profiler'
 end
 
 group :production do

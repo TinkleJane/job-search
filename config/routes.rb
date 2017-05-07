@@ -3,8 +3,11 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   resources :jobs do
     resources :resumes
+    collection do
+      get :search
+    end
   end
-  root 'jobs#index'
+  root 'welcome#index'
 
   namespace :admin do
     resources :jobs do
@@ -17,5 +20,9 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :courses
+  resources :courses do
+    collection do
+      get :search
+    end
+  end
 end

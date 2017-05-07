@@ -1,0 +1,8 @@
+
+$("#course_list").html('<h1>zoo</h1>');
+alert("<%= @courses %>111");
+<% i=0%>
+<% @courses.each  do |course| %>
+  <% i += 1 %>
+  $("#course_list").prepend("<%=j render :partial => "course_list", :locals => { :course => @courses[i] } %>");
+<% end %>
