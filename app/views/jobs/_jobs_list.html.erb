@@ -1,0 +1,18 @@
+<table class="table table-boldered">
+  <tr>
+    <th>职缺</th>
+    <th><%= link_to("薪资下限", jobs_path(:order => "by_lower_bound"))%></th>
+    <th><%= link_to("薪资上限", jobs_path(:order => "by_upper_bound"))%></th>
+    <th><%= link_to("刊登日期", jobs_path)%></th>
+    <th>描述</th>
+  </tr>
+  <% @jobs.each do |job| %>
+    <tr>
+      <td><%= link_to(job.title, job_path(job))%></td>
+      <td><%= render_job_wage(job.wage_lower_bound) %></td>
+      <td><%= render_job_wage(job.wage_upper_bound) %></td>
+      <td><%= render_job_created_time(job) %></td>
+      <td><%= show_description(job.description, 50) %></td>
+    </tr>
+  <% end %>
+</table>

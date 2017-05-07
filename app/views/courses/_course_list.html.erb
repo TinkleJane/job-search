@@ -1,0 +1,25 @@
+<% if course %>
+  <div class="offering-content">
+    <div class="horizontal-box">
+      <div style="width:110px;">
+        <img src="<%= course["photoUrl"]%>" class="offering-image" alt="" style="max-width: 100px; max-height: 100px;">
+      </div>
+      <div class="offering-info flex-1">
+        <div class="horizontal-box">
+          <a href="https://www.coursera.org/learn/<%= course["slug"]%>" target="_blank">
+            <h2 class="color-primary-text headline-1-text flex-1"><%= course["name"]%></h2>
+          </a>
+        </div>
+        <!-- <div>
+          <span class="specialization-course-count">
+            <span>5门课程专项</span>
+          </span>
+          <span class="dot-delimiter">·</span>
+          <span class="text-light offering-partner-names">
+            <span>密歇根大学</span>
+          </span>
+        </div> -->
+      </div>
+    </div>
+  </div>
+<% end %>
